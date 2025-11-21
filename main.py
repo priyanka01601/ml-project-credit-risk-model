@@ -22,12 +22,12 @@ with row2[0]:
 with row2[1]:
     loan_tenure_months=st.number_input('Loan tenure(months)',min_value=0, step=1,value=36)
 with row2[2]:
-    avg_dpd_per_delinquency=st.number_input('Avg DPD',min_value=8,value=20)
+    avg_dpd_per_delinquency=st.number_input('Avg DPD',min_value=0,value=20)
 
 with row3[0]:
     delinquency_ratio=st.number_input('Delinquency Ratio',min_value=0,max_value=100, step=1,value=30)
 with row3[1]:
-    credit_utilisation_ratio=st.number_input('Credit Utilisation Ratio',min_value=0,max_value=100, step=1,value=30  )
+    credit_utilization_ratio=st.number_input('Credit Utilisation Ratio',min_value=0,max_value=100, step=1,value=30  )
 with row3[2]:
     num_open_accounts=st.number_input('Open Loan Accounts',min_value=1,max_value=4, step=1,value=2)
 
@@ -41,7 +41,7 @@ with row4[2]:
 if st.button('Calculate Risk'):
     probability, credit_score, rating=predict(age,income,loan_amount,
                                               loan_tenure_months,avg_dpd_per_delinquency,delinquency_ratio,
-                                            credit_utilisation_ratio,num_open_accounts,residence_type,loan_purpose,loan_type)
+                                            credit_utilization_ratio,num_open_accounts,residence_type,loan_purpose,loan_type)
 
     st.write(f"Default Probability: {probability : .2%}")
     st.write(f"Credit Score: {credit_score}")
