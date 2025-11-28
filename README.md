@@ -2,6 +2,10 @@
 
 🔗 Streamlit App: https://ml-project-credit-risk-model-dn76s4drdpfzgvjimkw9ny.streamlit.app/
 
+<img width="902" height="694" alt="image" src="https://github.com/user-attachments/assets/1a8b5c97-3bca-4aec-a5c1-1247b008cf3d" />
+
+
+
 ## 📊 Credit Risk Modelling and Streamlit Prediction App
 
 ```
